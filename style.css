@@ -176,11 +176,15 @@ section:first-of-type {
 .Servicos {
   color: white;
   text-align: center;
+  padding: 100px 4% 80px;
 }
 
 .titulo-servicos {
   font-size: 32px;
   margin-bottom: 40px;
+  background: linear-gradient(to right, #ffffff, #5b8be4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .box-servicos {
@@ -208,6 +212,20 @@ section:first-of-type {
   max-width: 300px;
   border-radius: 8px;
   display: block;
+}
+
+/* Setas */
+.seta i {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+/* Por padrão, só mostra seta lateral */
+.seta-desktop {
+  display: inline-block;
+}
+.seta-mobile {
+  display: none;
 }
 
 /* ===== SOBRE ===== */
@@ -384,5 +402,19 @@ footer {
   section {
     margin-top: 40px;
     padding: 40px 5%;
+  }
+}
+/* Quando for mobile, troca a seta */
+@media (max-width: 768px) {
+  .box-servicos {
+    flex-direction: column;
+    text-align: center;
+  }
+  .seta-desktop {
+    display: none;
+  }
+  .seta-mobile {
+    display: inline-block;
+    margin: 15px 0;
   }
 }
