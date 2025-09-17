@@ -227,6 +227,85 @@ section:first-of-type {
 .seta-mobile {
   display: none;
 }
+/* =====PORQUE====*/
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 15px; /* espaço entre as box */
+  max-width: 900px; 
+  margin: 0 auto; /* centraliza */
+}
+
+.box {
+  background: #007BFF;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;   /* altura fixa */
+  border-radius: 8px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .box-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  }
+}
+/* ====PORQUE====
+/* Container das box */
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas no PC */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilo da box */
+.box {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px; /* quadradinha */
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box i {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.box h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.box p {
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Responsivo - no celular fica 2 colunas */
+@media (max-width: 768px) {
+  .box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
 
 /* ===== SOBRE ===== */
 .Sobre {
