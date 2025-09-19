@@ -440,7 +440,7 @@ footer {
 
 @media (max-width: 768px) {
   header .menu ul {
-    gap: 15px;
+    gap: 7px;
   }
   .txt-topo h1 {
     font-size: 28px;
